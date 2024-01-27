@@ -1,0 +1,19 @@
+<div class="container">
+    <h4>Add a Todo</h4>
+    <form (ngSubmit)="addTodo()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Title</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" name="title" id="title" [(ngModel)]="title" aria-label="Title" aria-describedby="basic-addon1" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Description</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc" aria-label="Description" aria-describedby="basic-addon1" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+
