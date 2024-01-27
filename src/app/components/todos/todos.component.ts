@@ -24,6 +24,9 @@ export class TodosComponent implements OnInit{
       // Access localStorage within the ngOnInit lifecycle hook or other methods
       this.localTodos = localStorage.getItem("todos");
       this.todos = JSON.parse(this.localTodos)
+      if (!this.localTodos){
+        this.todos = []
+      }
     }
   
     // getDataFromLocalStorage() {
